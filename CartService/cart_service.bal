@@ -21,7 +21,7 @@ function getProductData(int productId) returns json {
     if val is error {
         io:println("Error in getting product data");
     } else {
-        io:println("status: " + val.statusCode.toString());
+        io:println("status is: " + val.statusCode.toString());
     }
     return { "productId": productId, "productName": "MacBook Pro", "price": 2000.00 };
 }
